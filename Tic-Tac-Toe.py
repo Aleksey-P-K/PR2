@@ -17,11 +17,11 @@ def row_winner(board):
             is_equal2.append(True)
     return True in is_equal2
 
-
+# column_winner
 def column_winner(board):
     return row_winner([list(x) for x in zip(*board)])
 
-
+# diag
 def diagonal_winner(board):
     for row in range(len(board)):
         all_equal = True
